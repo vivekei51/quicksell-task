@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element dimensions */
+}
+
+.card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 18rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(185, 180, 180);
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(97, 26, 26, 0.2);
+    transition: all 0.3s;
+   
+   
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.title {
+    padding-left: 0.3rem;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.2rem; /* Adjust font size for better readability */
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.info_btn {
+    padding: 0.3rem 1rem; /* Increase padding for better touch interaction on mobile devices */
+    border: 1px solid rgb(153, 146, 146);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.info_btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(168, 147, 147);
+}
+
+.img {
+    height: 3rem; /* Maintain aspect ratio */
+    max-width: auto; /* Prevent image overflow on small screens */
+    border-radius: 60%;
+}
+
+.card h4 {
+    font-size: 1rem; /* Adjust font size for better readability */
+    font-weight: 400;
+    color: rgb(114, 112, 112);
+}
+@media screen and (max-width:550px )
+{
+    .card{
+       margin-left: -10px;
+    }
+}
